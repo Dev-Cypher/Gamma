@@ -4,51 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balloon Popping Game</title>
-    <meta name="description" content="Play the Balloon Popping Game and test your skills! Enjoy this fun and addictive game for all ages.">
+    <meta name="description" content="Play the Balloon Popping Game and test your skills!">
     <meta name="keywords" content="balloon, popping, game, fun, entertainment">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Anurag">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="page.ico" type="image/x-icon">
     <!-- Open Graph meta tags for better sharing on social media -->
     <meta property="og:title" content="Balloon Popping Game">
-    <meta property="og:description" content="Play the Balloon Popping Game and test your skills! Enjoy this fun and addictive game for all ages.">
-    <meta property="og:image" content="thumbnail.jpg">
+    <meta property="og:description" content="Play the Balloon Popping Game and test your skills!">
+    <meta property="og:image" content="thumbnail.jpg"> <!-- Add a thumbnail image URL -->
     <meta property="og:url" content="https://balloons.evils.in">
     <meta property="og:type" content="website">
     <!-- Twitter Card meta tags for better sharing on Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Balloon Popping Game">
-    <meta name="twitter:description" content="Play the Balloon Popping Game and test your skills! Enjoy this fun and addictive game for all ages.">
-    <meta name="twitter:image" content="thumbnail.jpg">
+    <meta name="twitter:description" content="Play the Balloon Popping Game and test your skills!">
+    <meta name="twitter:image" content="thumbnail.jpg"> <!-- Add a thumbnail image URL -->
     <!-- Schema.org markup for structured data -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "Balloon Popping Game",
-            "description": "Play the Balloon Popping Game and test your skills! Enjoy this fun and addictive game for all ages.",
+            "description": "Play the Balloon Popping Game and test your skills!",
             "url": "https://balloons.evils.in"
         }
     </script>
 </head>
 <body>
-    <header>
+    <div class="menu">
         <h1>Welcome to the Balloon Popping Game</h1>
-    </header>
-    <main>
-        <div class="menu">
-            <div class="difficulty-buttons">
-                <button onclick="startGame('easy')">Easy</button>
-                <button onclick="startGame('medium')">Medium</button>
-                <button onclick="startGame('hard')">Hard</button>
-            </div>
-            <div class="high-score">High Score: <span id="high-score">0</span></div>
+        <div class="difficulty-buttons">
+            <button onclick="startGame('easy')">Easy</button>
+            <button onclick="startGame('medium')">Medium</button>
+            <button onclick="startGame('hard')">Hard</button>
         </div>
-        <canvas id="canvas"></canvas>
-    </main>
-    <footer>
-        <p>&copy; 2024 Balloon Popping Game </p>
-    </footer>
+        <div class="high-score">High Score: <span id="high-score">0</span></div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
     <script src="script.js" async defer></script>
 </body>
 </html>
