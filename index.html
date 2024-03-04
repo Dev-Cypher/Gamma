@@ -3,22 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balloon Popping Game</title>
+    <title>Balloon Popping Game - Play Now!</title>
+    <meta name="description" content="Play the exciting Balloon Popping Game and challenge yourself with different difficulty levels. Can you beat the high score?">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="page.ico" type="image/x-icon">
+    <link rel="canonical" href="https://balloons.evils.in/balloon-popping-game">
 </head>
 <body>
-    <div class="menu">
+    <header>
         <h1>Welcome to the Balloon Popping Game</h1>
-        <div class="difficulty-buttons">
-            <button onclick="startGame('easy')">Easy</button>
-            <button onclick="startGame('medium')">Medium</button>
-            <button onclick="startGame('hard')">Hard</button>
+    </header>
+    <main>
+        <div class="menu">
+            <h2>Select Difficulty:</h2>
+            <div class="difficulty-buttons">
+                <button onclick="startGame('easy')">Easy</button>
+                <button onclick="startGame('medium')">Medium</button>
+                <button onclick="startGame('hard')">Hard</button>
+            </div>
+            <div class="high-score">High Score: <span id="high-score">0</span></div>
         </div>
-        <div class="high-score">High Score: <span id="high-score">0</span></div>
-    </div>
-
-    <canvas id="canvas"></canvas>
-
+    </main>
+    <footer>
+        <p>&copy; 2024 Balloon Popping Game. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://balloons.evils.in",
+      "name": "Balloon Popping Game",
+      "description": "Play the exciting Balloon Popping Game and challenge yourself with different difficulty levels. Can you beat the high score?",
+      "potentialAction": {
+        "@type": "PlayAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://balloons.evils.in/play"
+        },
+        "expectsAcceptanceOf": {
+          "@type": "Offer",
+          "eligibleRegion": {
+            "@type": "Country",
+            "name": "US"
+          },
+          "category": "free",
+          "availabilityStarts": "2024-01-01T00:00"
+        }
+      }
+    }
+    </script>
 </body>
 </html>
